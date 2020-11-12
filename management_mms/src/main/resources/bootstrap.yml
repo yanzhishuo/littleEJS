@@ -1,0 +1,15 @@
+spring:
+application:
+name: service-member
+cloud:
+config:
+discovery:
+enabled: true
+service-id: SERVICE-CONFIG-SERVER
+fail-fast: true
+profiles:
+active: dev
+eureka:
+client:
+service-url:
+default-zone: http://localhost:8761/eureka/
